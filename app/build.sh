@@ -10,6 +10,3 @@ python3.9 manage.py migrate --noinput
 
 echo "Collect Static..."
 python3.9 manage.py collectstatic --noinput --clear
-#python3.9 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
-#python3.9 celery -A app worker -l info -P gevent
-#python3.9 celery -A app flower
